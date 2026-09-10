@@ -1,0 +1,198 @@
+Command: ninja all
+[1/12] Linking C static library esp-idf/spiffs/libspiffs.a
+[2/12] Linking C static library esp-idf/fatfs/libfatfs.a
+[3/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/agent-presence-device.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/agent-presence-device.c.obj 
+/home/ludo/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DESP_PSA_ITS_AVAILABLE -DIDF_VER=\"v6.1\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DMBEDTLS_MAJOR_VERSION=4 -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DTF_PSA_CRYPTO_USER_CONFIG_FILE=\"mbedtls/esp_config.h\" -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -D__STDC_WANT_LIB_EXT1__=0 -I/home/ludo/dev/embedded/agent-presence-device/build/config -I/home/ludo/dev/embedded/agent-presence-device/main -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_libc/platform_include -I/home/ludo/.espressif/v6.1/esp-idf/components/freertos/config/include -I/home/ludo/.espressif/v6.1/esp-idf/components/freertos/config/include/freertos -I/home/ludo/.espressif/v6.1/esp-idf/components/freertos/config/xtensa/include -I/home/ludo/.espressif/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/ludo/.espressif/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/ludo/.espressif/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/ludo/.espressif/v6.1/esp-idf/components/freertos/esp_additions/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hw_support/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hw_support/include/soc -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hw_support/ldo/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hw_support/debug_probe/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hw_support/etm/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/tuning_scheme_impl/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_intr/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hw_support/power_supply/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hw_support/modem/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hw_support/port/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/port/esp32s3/. -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/port/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/heap/include -I/home/ludo/.espressif/v6.1/esp-idf/components/heap/tlsf -I/home/ludo/.espressif/v6.1/esp-idf/components/log/include -I/home/ludo/.espressif/v6.1/esp-idf/components/soc/include -I/home/ludo/.espressif/v6.1/esp-idf/components/soc/esp32s3 -I/home/ludo/.espressif/v6.1/esp-idf/components/soc/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/soc/esp32s3/register -I/home/ludo/.espressif/v6.1/esp-idf/components/hal/platform_port/include -I/home/ludo/.espressif/v6.1/esp-idf/components/hal/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/hal/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_rom/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_rom/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_rom/esp32s3/include/esp32s3 -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_rom/esp32s3 -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_common/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_system/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_system/port/soc -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_system/port/include/private -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_stdio/include -I/home/ludo/.espressif/v6.1/esp-idf/components/xtensa/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/xtensa/include -I/home/ludo/.espressif/v6.1/esp-idf/components/xtensa/deprecated_include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_gpio/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_gpio/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_usb/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_usb/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_pmu/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_pmu/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_regi2c/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_regi2c/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_uart/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_uart/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_ana_conv/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_ana_conv/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_dma/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_dma/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/lwip/include -I/home/ludo/.espressif/v6.1/esp-idf/components/lwip/include/apps -I/home/ludo/.espressif/v6.1/esp-idf/components/lwip/lwip/src/include -I/home/ludo/.espressif/v6.1/esp-idf/components/lwip/port/include -I/home/ludo/.espressif/v6.1/esp-idf/components/lwip/port/freertos/include -I/home/ludo/.espressif/v6.1/esp-idf/components/lwip/port/esp32xx/include -I/home/ludo/.espressif/v6.1/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/ludo/.espressif/v6.1/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_gpspi/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_gpspi/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_clock/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_clock/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_mspi/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_mspi/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_blockdev/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_security/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_security/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_app_format/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_bootloader_format/include -I/home/ludo/.espressif/v6.1/esp-idf/components/app_update/include -I/home/ludo/.espressif/v6.1/esp-idf/components/bootloader_support/include -I/home/ludo/.espressif/v6.1/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_partition/include -I/home/ludo/.espressif/v6.1/esp-idf/components/efuse/include -I/home/ludo/.espressif/v6.1/esp-idf/components/efuse/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_security/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_gpio/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_pm/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_mm/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_dma/include -I/home/ludo/.espressif/v6.1/esp-idf/components/mbedtls/port/include -I/home/ludo/.espressif/v6.1/esp-idf/components/mbedtls/mbedtls/include -I/home/ludo/.espressif/v6.1/esp-idf/components/mbedtls/mbedtls/library -I/home/ludo/.espressif/v6.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/core -I/home/ludo/.espressif/v6.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/src -I/home/ludo/.espressif/v6.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/extras -I/home/ludo/.espressif/v6.1/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/ludo/.espressif/v6.1/esp-idf/components/mbedtls/port/psa_driver/include -I/home/ludo/.espressif/v6.1/esp-idf/components/mbedtls/port/psa_crypto_storage/include -I/home/ludo/.espressif/v6.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/include -I/home/ludo/.espressif/v6.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/include -I/home/ludo/dev/embedded/agent-presence-device/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/include -I/home/ludo/.espressif/v6.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/drivers/everest/include -I/home/ludo/.espressif/v6.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/drivers/p256-m/p256-m -I/home/ludo/.espressif/v6.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/drivers/pqcp/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_timg/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_timg/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_wdt/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_wdt/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_rtc_timer/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_rtc_timer/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/spi_flash/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_usb_cdc_rom_console/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_systimer/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_systimer/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_touch_sens/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_touch_sens/include -I/home/ludo/.espressif/v6.1/esp-idf/components/pthread/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_timer/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_ringbuf/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_psram/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_psram/device/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_psram/xip_impl/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_uart/include -I/home/ludo/.espressif/v6.1/esp-idf/components/vfs/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_gptimer/include -I/home/ludo/.espressif/v6.1/esp-idf/components/app_trace/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_event/include -I/home/ludo/.espressif/v6.1/esp-idf/components/nvs_sec_provider/include -I/home/ludo/.espressif/v6.1/esp-idf/components/nvs_flash/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_phy/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_phy/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_netif/include -I/home/ludo/.espressif/v6.1/esp-idf/components/wpa_supplicant/include -I/home/ludo/.espressif/v6.1/esp-idf/components/wpa_supplicant/port/include -I/home/ludo/.espressif/v6.1/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_coex/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_wifi/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_wifi/include/local -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_wifi/wifi_apps/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_wifi/remote/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_spi/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_gdbstub/include -I/home/ludo/.espressif/v6.1/esp-idf/components/unity/include -I/home/ludo/.espressif/v6.1/esp-idf/components/unity/unity/src -I/home/ludo/.espressif/v6.1/esp-idf/components/cmock/CMock/src -I/home/ludo/.espressif/v6.1/esp-idf/components/console -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_i2c/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_i2c/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_twai/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_twai/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/driver/i2c/include -I/home/ludo/.espressif/v6.1/esp-idf/components/driver/touch_sensor/include -I/home/ludo/.espressif/v6.1/esp-idf/components/driver/twai/include -I/home/ludo/.espressif/v6.1/esp-idf/components/driver/touch_sensor/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/http_parser -I/home/ludo/.espressif/v6.1/esp-idf/components/esp-tls -I/home/ludo/.espressif/v6.1/esp-idf/components/esp-tls/esp-tls-crypto -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_adc/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_adc/interface -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_adc/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_asrc/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_asrc_adapter/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_blockdev_util/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_ana_cmpr/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_ana_cmpr/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_bitscrambler/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_cam/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_cam/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_isp/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_cam/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_cam/interface -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_cam/dvp/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_cordic/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_cordic/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_dac/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_i2c/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_i2s/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_i2s/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_i2s/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_i3c/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_i3c/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_jpeg/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_jpeg/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_ledc/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_ledc/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_ledc/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_mcpwm/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_mcpwm/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_mcpwm/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_parlio/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_parlio/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_pcnt/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_pcnt/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_pcnt/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_ppa/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_ppa/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_rmt/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_rmt/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_rmt/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_sd/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_sd/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/sdmmc/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_sd_intf/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_sdio/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_sdm/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_sdmmc/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_sdmmc/legacy/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_sdspi/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_touch_sens/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_touch_sens/hw_ver2/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_tsens/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_driver_twai/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_emac/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_eth/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_ieee802154/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_lcd/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hal_lcd/esp32s3/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_hid/include -I/home/ludo/.espressif/v6.1/esp-idf/components/tcp_transport/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_http_client/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_http_server/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_https_ota/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_https_server/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_lcd/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_lcd/interface -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_lcd/rgb/include -I/home/ludo/.espressif/v6.1/esp-idf/components/protobuf-c/protobuf-c -I/home/ludo/.espressif/v6.1/esp-idf/components/protocomm/include/common -I/home/ludo/.espressif/v6.1/esp-idf/components/protocomm/include/security -I/home/ludo/.espressif/v6.1/esp-idf/components/protocomm/include/transports -I/home/ludo/.espressif/v6.1/esp-idf/components/protocomm/include/crypto/srp6a -I/home/ludo/.espressif/v6.1/esp-idf/components/protocomm/proto-c -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_local_ctrl/include -I/home/ludo/.espressif/v6.1/esp-idf/components/esp_trace/include -I/home/ludo/.espressif/v6.1/esp-idf/components/wear_levelling/include -I/home/ludo/.espressif/v6.1/esp-idf/components/fatfs/diskio -I/home/ludo/.espressif/v6.1/esp-idf/components/fatfs/src -I/home/ludo/.espressif/v6.1/esp-idf/components/fatfs/vfs -I/home/ludo/.espressif/v6.1/esp-idf/components/ieee802154/include -I/home/ludo/.espressif/v6.1/esp-idf/components/perfmon/include -I/home/ludo/.espressif/v6.1/esp-idf/components/rt/include -I/home/ludo/.espressif/v6.1/esp-idf/components/spiffs/include @"/home/ludo/dev/embedded/agent-presence-device/build/toolchain/cflags" -ffunction-sections -fdata-sections -Wall -Werror -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/ludo/dev/embedded/agent-presence-device=. -fmacro-prefix-map=/home/ludo/.espressif/v6.1/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu23 -Wno-old-style-declaration -fzero-init-padding-bits=all -fno-malloc-dce -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/agent-presence-device.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/agent-presence-device.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/agent-presence-device.c.obj -c /home/ludo/dev/embedded/agent-presence-device/main/agent-presence-device.c
+In file included from /home/ludo/dev/embedded/agent-presence-device/main/agent-presence-device.c:2:
+/home/ludo/dev/embedded/agent-presence-device/main/agent-presence-device.c: In function 'app_main':
+/home/ludo/dev/embedded/agent-presence-device/main/agent-presence-device.c:6:13: error: 'TAG' undeclared (first use in this function)
+    6 |    ESP_LOGI(TAG,"Devlog Hardware V0");
+      |             ^~~
+/home/ludo/.espressif/v6.1/esp-idf/components/log/include/esp_log.h:220:111: note: in definition of macro 'ESP_LOG_LEVEL'
+  220 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                               ^~~
+/home/ludo/.espressif/v6.1/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/ludo/dev/embedded/agent-presence-device/main/agent-presence-device.c:6:4: note: in expansion of macro 'ESP_LOGI'
+    6 |    ESP_LOGI(TAG,"Devlog Hardware V0");
+      |    ^~~~~~~~
+/home/ludo/dev/embedded/agent-presence-device/main/agent-presence-device.c:6:13: note: each undeclared identifier is reported only once for each function it appears in
+    6 |    ESP_LOGI(TAG,"Devlog Hardware V0");
+      |             ^~~
+/home/ludo/.espressif/v6.1/esp-idf/components/log/include/esp_log.h:220:111: note: in definition of macro 'ESP_LOG_LEVEL'
+  220 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                               ^~~
+/home/ludo/.espressif/v6.1/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/ludo/dev/embedded/agent-presence-device/main/agent-presence-device.c:6:4: note: in expansion of macro 'ESP_LOGI'
+    6 |    ESP_LOGI(TAG,"Devlog Hardware V0");
+      |    ^~~~~~~~
+[4/12] Performing build step for 'bootloader'
+[1/158] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj
+[2/158] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj
+[3/158] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj
+[4/158] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj
+[5/158] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj
+[6/158] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj
+[7/158] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj
+[8/158] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj
+[9/158] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj
+[10/158] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj
+[11/158] Building ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_longjmp.S.obj
+[12/158] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_format_text.c.obj
+[13/158] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_serial_output.c.obj
+[14/158] Building ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_writeback_esp32s3.S.obj
+[15/158] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_gpio.c.obj
+[16/158] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj
+[17/158] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.obj
+[18/158] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj
+[19/158] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj
+[20/158] Building C object esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj
+[21/158] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj
+[22/158] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj
+[23/158] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj
+[24/158] Linking C static library esp-idf/log/liblog.a
+[25/158] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj
+[26/158] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj
+[27/158] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj
+[28/158] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_table.c.obj
+[29/158] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.obj
+[30/158] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_rtc_calib.c.obj
+[31/158] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_fields.c.obj
+[32/158] Building C object esp-idf/esp_hal_systimer/CMakeFiles/__idf_esp_hal_systimer.dir/systimer_hal.c.obj
+[33/158] Linking C static library esp-idf/esp_rom/libesp_rom.a
+[34/158] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_utility.c.obj
+[35/158] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj
+[36/158] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj
+[37/158] Linking C static library esp-idf/esp_common/libesp_common.a
+[38/158] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj
+[39/158] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj
+[40/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj
+[41/158] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj
+[42/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj
+[43/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj
+[44/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj
+[45/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj
+[46/158] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj
+[47/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj
+[48/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj
+[49/158] Linking C static library esp-idf/esp_hw_support/libesp_hw_support.a
+[50/158] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj
+[51/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj
+[52/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_sha.c.obj
+[53/158] Linking C static library esp-idf/esp_system/libesp_system.a
+[54/158] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj
+[55/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_reset_common.c.obj
+[56/158] Linking C static library esp-idf/esp_hal_systimer/libesp_hal_systimer.a
+[57/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console_loader.c.obj
+[58/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj
+[59/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_loader.c.obj
+[60/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj
+[61/158] Linking C static library esp-idf/efuse/libefuse.a
+[62/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj
+[63/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_soc.c.obj
+[64/158] Building C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj
+[65/158] Building C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp32s3/esp_crypto_clk.c.obj
+[66/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_panic.c.obj
+[67/158] Building C object esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/esp32s3/adc_periph.c.obj
+[68/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console.c.obj
+[69/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32s3.c.obj
+[70/158] Building C object esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/esp32s3/mwdt_periph.c.obj
+[71/158] Building C object esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/esp32s3/temperature_sensor_periph.c.obj
+[72/158] Building C object esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_security.dir/mpu_hal.c.obj
+[73/158] Building C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_periph_clk.c.obj
+[74/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_init.c.obj
+[75/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj
+[76/158] Building C object esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/rom_patch.c.obj
+[77/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_esp32s3.c.obj
+[78/158] Building C object esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/esp_bootloader_desc.c.obj
+[79/158] Building C object esp-idf/esp_hal_timg/CMakeFiles/__idf_esp_hal_timg.dir/esp32s3/timer_periph.c.obj
+[80/158] Building C object esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/xt_wdt_hal.c.obj
+[81/158] Building C object esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/adc_oneshot_hal.c.obj
+[82/158] Building C object esp-idf/esp_hal_timg/CMakeFiles/__idf_esp_hal_timg.dir/timer_hal.c.obj
+[83/158] Building C object esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/temperature_sensor_hal.c.obj
+[84/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_utility.c.obj
+[85/158] Building C object esp-idf/esp_hal_mspi/CMakeFiles/__idf_esp_hal_mspi.dir/esp32s3/mspi_periph.c.obj
+[86/158] Building C object esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/esp32s3/spi_periph.c.obj
+[87/158] Building C object esp-idf/esp_hal_dma/CMakeFiles/__idf_esp_hal_dma.dir/esp32s3/gdma_periph.c.obj
+[88/158] Building C object esp-idf/esp_hal_clock/CMakeFiles/__idf_esp_hal_clock.dir/esp32s3/clk_tree_hal.c.obj
+[89/158] Building C object esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/adc_hal_common.c.obj
+[90/158] Building C object esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/adc_hal.c.obj
+[91/158] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj
+[92/158] Building C object esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/spi_slave_hal.c.obj
+[93/158] Building C object esp-idf/esp_hal_dma/CMakeFiles/__idf_esp_hal_dma.dir/gdma_hal_top.c.obj
+[94/158] Building C object esp-idf/esp_hal_uart/CMakeFiles/__idf_esp_hal_uart.dir/esp32s3/uart_periph.c.obj
+[95/158] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp_image_format.c.obj
+[96/158] Building C object esp-idf/esp_hal_pmu/CMakeFiles/__idf_esp_hal_pmu.dir/brownout_hal.c.obj
+[97/158] Building C object esp-idf/esp_hal_uart/CMakeFiles/__idf_esp_hal_uart.dir/uart_hal_iram.c.obj
+[98/158] Building C object esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/spi_hal.c.obj
+[99/158] Building C object esp-idf/esp_hal_usb/CMakeFiles/__idf_esp_hal_usb.dir/esp32s3/usb_dwc_periph.c.obj
+[100/158] Building C object esp-idf/esp_hal_uart/CMakeFiles/__idf_esp_hal_uart.dir/uhci_hal.c.obj
+[101/158] Linking C static library esp-idf/bootloader_support/libbootloader_support.a
+[102/158] Linking C static library esp-idf/esp_security/libesp_security.a
+[103/158] Building C object esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/spi_slave_hal_iram.c.obj
+[104/158] Building C object esp-idf/esp_hal_dma/CMakeFiles/__idf_esp_hal_dma.dir/gdma_hal_ahb_v1.c.obj
+[105/158] Linking C static library esp-idf/esp_hal_security/libesp_hal_security.a
+[106/158] Building C object esp-idf/esp_hal_pmu/CMakeFiles/__idf_esp_hal_pmu.dir/esp32s3/rtc_cntl_hal.c.obj
+[107/158] Building C object esp-idf/esp_hal_gpio/CMakeFiles/__idf_esp_hal_gpio.dir/esp32s3/dedic_gpio_periph.c.obj
+[108/158] Building C object esp-idf/esp_hal_usb/CMakeFiles/__idf_esp_hal_usb.dir/usb_wrap_hal.c.obj
+[109/158] Building C object esp-idf/esp_hal_gpio/CMakeFiles/__idf_esp_hal_gpio.dir/esp32s3/rtc_io_periph.c.obj
+[110/158] Building C object esp-idf/esp_hal_uart/CMakeFiles/__idf_esp_hal_uart.dir/uart_hal.c.obj
+[111/158] Building C object esp-idf/esp_hal_gpio/CMakeFiles/__idf_esp_hal_gpio.dir/gpio_hal.c.obj
+[112/158] Building C object esp-idf/esp_hal_gpio/CMakeFiles/__idf_esp_hal_gpio.dir/sdm_hal.c.obj
+[113/158] Linking C static library esp-idf/esp_hal_ana_conv/libesp_hal_ana_conv.a
+[114/158] Building C object esp-idf/esp_hal_usb/CMakeFiles/__idf_esp_hal_usb.dir/usb_serial_jtag_hal.c.obj
+[115/158] Building C object esp-idf/esp_hal_gpio/CMakeFiles/__idf_esp_hal_gpio.dir/rtc_io_hal.c.obj
+[116/158] Building C object esp-idf/esp_hal_gpio/CMakeFiles/__idf_esp_hal_gpio.dir/esp32s3/sdm_periph.c.obj
+[117/158] Linking C static library esp-idf/esp_hal_wdt/libesp_hal_wdt.a
+[118/158] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj
+[119/158] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gpio_periph.c.obj
+[120/158] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj
+[121/158] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj
+[122/158] Linking C static library esp-idf/esp_hal_timg/libesp_hal_timg.a
+[123/158] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/interrupts.c.obj
+[124/158] Building C object esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/spi_hal_iram.c.obj
+[125/158] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mpi_periph.c.obj
+[126/158] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/power_supply_periph.c.obj
+[127/158] Generating project_elf_src_esp32s3.c
+[128/158] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj
+[129/158] Building C object esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/spi_slave_hd_hal.c.obj
+[130/158] Building C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj
+[131/158] Preprocessing linker script /home/ludo/.espressif/v6.1/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.memory.ld.in -> /home/ludo/dev/embedded/agent-presence-device/build/bootloader/ld/bootloader.memory.ld
+[132/158] Preprocessing linker script /home/ludo/.espressif/v6.1/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.sections.ld.in -> /home/ludo/dev/embedded/agent-presence-device/build/bootloader/ld/bootloader.sections.ld
+[133/158] Building C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xt_trax.c.obj
+[134/158] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/efuse_hal.c.obj
+[135/158] Building C object CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj
+[136/158] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj
+[137/158] Building C object esp-idf/esp_hal_usb/CMakeFiles/__idf_esp_hal_usb.dir/usb_dwc_hal.c.obj
+[138/158] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj
+[139/158] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj
+[140/158] Building C object esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/uECC_verify_antifault.c.obj
+[141/158] Linking C static library esp-idf/micro-ecc/libmicro-ecc.a
+[142/158] Linking C static library esp-idf/esp_bootloader_format/libesp_bootloader_format.a
+[143/158] Linking C static library esp-idf/spi_flash/libspi_flash.a
+[144/158] Linking C static library esp-idf/esp_hal_mspi/libesp_hal_mspi.a
+[145/158] Linking C static library esp-idf/esp_hal_clock/libesp_hal_clock.a
+[146/158] Linking C static library esp-idf/esp_hal_gpspi/libesp_hal_gpspi.a
+[147/158] Linking C static library esp-idf/esp_hal_dma/libesp_hal_dma.a
+[148/158] Linking C static library esp-idf/esp_hal_uart/libesp_hal_uart.a
+[149/158] Linking C static library esp-idf/esp_hal_pmu/libesp_hal_pmu.a
+[150/158] Linking C static library esp-idf/esp_hal_usb/libesp_hal_usb.a
+[151/158] Linking C static library esp-idf/esp_hal_gpio/libesp_hal_gpio.a
+[152/158] Linking C static library esp-idf/hal/libhal.a
+[153/158] Linking C static library esp-idf/soc/libsoc.a
+[154/158] Linking C static library esp-idf/xtensa/libxtensa.a
+[155/158] Linking C static library esp-idf/main/libmain.a
+[156/158] Linking C executable bootloader.elf
+[157/158] Generating binary image from built executable
+esptool v5.3.1
+Creating ESP32-S3 image...
+Merged 2 ELF sections.
+Successfully created ESP32-S3 image.
+Generated /home/ludo/dev/embedded/agent-presence-device/build/bootloader/bootloader.bin
+[158/158] cd /home/ludo/dev/embedded/agent-presence-device/build/bootloader && /home/ludo/.espressif/tools/python/v6.1/venv/bin/python /home/ludo/.espressif/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/ludo/dev/embedded/agent-presence-device/build/bootloader/bootloader.bin
+Bootloader binary size 0x5280 bytes. 0x2d80 bytes (36%) free.
+ninja: build stopped: subcommand failed.

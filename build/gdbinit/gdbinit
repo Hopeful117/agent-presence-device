@@ -1,0 +1,2 @@
+source /home/ludo/dev/embedded/agent-presence-device/build/gdbinit/symbols
+source /home/ludo/dev/embedded/agent-presence-device/build/gdbinit/connect
