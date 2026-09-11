@@ -1,0 +1,17 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/ludo/dev/embedded/agent-presence-device/build/bootloader && /home/ludo/.espressif/tools/python/v6.1/venv/bin/python /home/ludo/.espressif/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/ludo/dev/embedded/agent-presence-device/build/bootloader/bootloader.bin
+Bootloader binary size 0x5280 bytes. 0x2d80 bytes (36%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/agent-presence-device.c.obj
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating esp-idf/esp_system/ld/sections.ld
+Skipping linker script generation, section names unchanged
+[5/7] Linking CXX executable agent-presence-device.elf
+[6/7] Generating binary image from built executable
+esptool v5.3.1
+Creating ESP32-S3 image...
+Merged 3 ELF sections.
+Successfully created ESP32-S3 image.
+Generated /home/ludo/dev/embedded/agent-presence-device/build/agent-presence-device.bin
+[7/7] cd /home/ludo/dev/embedded/agent-presence-device/build && /home/ludo/.espressif/tools/python/v6.1/venv/bin/python /home/ludo/.espressif/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ludo/dev/embedded/agent-presence-device/build/partition_table/partition-table.bin /home/ludo/dev/embedded/agent-presence-device/build/agent-presence-device.bin
+agent-presence-device.bin binary size 0x345e0 bytes. Smallest app partition is 0x100000 bytes. 0xcba20 bytes (80%) free.
