@@ -13,8 +13,10 @@
 
 
 #include "oled.h"
-#include "presence.h"
 #include "agent_message.h"
+#include "message_handler.h"
+#include "wifi_connection.h"
+
 
 static const char *TAG = "DEVLOG_HW";
 
@@ -23,6 +25,7 @@ void app_main(void)
    ESP_LOGI(TAG, "DevLog Hardware V0");
 
    ESP_ERROR_CHECK(oled_init());
+   ESP_ERROR_CHECK(wifi_connect());
 
    /* Start with every pixel off. */
    oled_clear();
@@ -34,7 +37,7 @@ void app_main(void)
     .body = "STORY 0119",
     .level = AGENT_INFO
 };
-    presence_show_message(&message);
+    message_handler_handle(&message);
 
 
 

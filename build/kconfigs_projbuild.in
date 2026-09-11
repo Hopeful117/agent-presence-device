@@ -4,3 +4,4 @@ source "/home/ludo/.espressif/v6.1/esp-idf/components/esp_app_format/Kconfig.pro
 source "/home/ludo/.espressif/v6.1/esp-idf/components/esp_rom/Kconfig.projbuild"
 source "/home/ludo/.espressif/v6.1/esp-idf/components/esptool_py/Kconfig.projbuild"
 source "/home/ludo/.espressif/v6.1/esp-idf/components/partition_table/Kconfig.projbuild"
+source "/home/ludo/dev/embedded/agent-presence-device/main/Kconfig.projbuild"

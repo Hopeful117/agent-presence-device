@@ -6241,6 +6241,34 @@
     {
         "children": [
             {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "WIFI_SSID",
+                "name": "WIFI_SSID",
+                "range": null,
+                "title": "Wi-Fi SSID",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "WIFI_PASSWORD",
+                "name": "WIFI_PASSWORD",
+                "range": null,
+                "title": "Wi-Fi password",
+                "type": "string"
+            }
+        ],
+        "depends_on": null,
+        "id": "agent-presence-device-home-ludo-dev-embedded-agent-presence-device-main-Kconfig.projbuild-1",
+        "title": "Agent Presence Device",
+        "type": "menu"
+    },
+    {
+        "children": [
+            {
                 "children": [
                     {
                         "children": [],

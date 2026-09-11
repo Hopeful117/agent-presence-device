@@ -4,5 +4,7 @@ idf_component_register(
         "font.c"
         "oled.c"
         "presence.c"
+        "message_handler.c"
+        "wifi_connection.c"
     INCLUDE_DIRS "."
 )

@@ -57,4 +57,10 @@ entry 0x403c8904
 [0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
 [0;32mI (264) main_task: Started on CPU0[0m
 [0;32mI (264) main_task: Calling app_main()[0m
-[0;32mI (274) DEVLOG_HW: DevLog Hard
+[0;32mI (274) DEVLOG_HW: DevLog Hardware V0[0m
+[0;32mI (274) DEVLOG_HW: OLED GPIO initialized[0m
+[0;32mI (274) DEVLOG_HW: SPI bus initialized[0m
+[0;32mI (284) DEVLOG_HW: OLED SPI device registered[0m
+[0;32mI (304) DEVLOG_HW: OLED hardware reset complete[0m
+[0;32mI (404) DEVLOG_HW: SH1106 initialized[0m
+[0;32mI (30434) main_task: Returned from app_main()[0m
