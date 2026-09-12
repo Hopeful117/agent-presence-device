@@ -7,5 +7,6 @@
 #include "agent_message.h"
 
 void presence_show_message(const AgentMessage *message);
+void presence_acknowledge(void);
 
 #endif //AGENT_PRESENCE_DEVICE_PRESENCE_H

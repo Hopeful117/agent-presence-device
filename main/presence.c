@@ -19,3 +19,8 @@ void presence_show_message(const AgentMessage *message)
 
     oled_flush();
 }
+void presence_acknowledge(void)
+{
+    oled_clear();
+    oled_flush();
+}

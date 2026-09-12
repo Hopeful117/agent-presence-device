@@ -1,0 +1,262 @@
+Command: /home/ludo/.espressif/tools/python/v6.1/venv/bin/python /home/ludo/.espressif/v6.1/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/ludo/dev/embedded/agent-presence-device/build/agent-presence-device.elf /home/ludo/dev/embedded/agent-presence-device/build/bootloader/bootloader.elf -m '/home/ludo/.espressif/tools/python/v6.1/venv/bin/python' '/home/ludo/.espressif/v6.1/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+[0;32mI (110) esp_image: segment 1: paddr=0002fa94 vaddr=3fc9a000 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048c2b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xde4
+load:0x403cb700,len:0x2f58
+entry 0x403c8904
+[0;32mI (24) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 10 2026 14:08:31[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.4[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1fa6ch (129644) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0002fa94 vaddr=3fc9a000 size=00584h (  1412) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=97ad0h (621264) map[0m
+[0;32mI (227) esp_image: segment 3: paddr=000c7af8 vaddr=3fc9a584 size=04dach ( 19884) load[0m
+[0;32mI (232) esp_image: segment 4: paddr=000cc8ac vaddr=40374000 size=15fd8h ( 90072) load[0m
+[0;32mI (253) esp_image: segment 5: paddr=000e288c vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (262) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (262) boot: Disabling RNG early entropy source...[0m
+[0;32mI (273) cpu_start: Multicore app[0m
+[0;32mI (281) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (282) cpu_start: Pro cpu start user code[0m
+[0;32mI (282) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (283) app_init: Application information:[0m
+[0;32mI (287) app_init: Project name:     agent-presence-device[0m
+[0;32mI (292) app_init: App version:      56d9904-dirty[0m
+[0;32mI (297) app_init: Compile time:     Sep 12 2026 16:32:53[0m
+[0;32mI (302) app_init: ELF file SHA256:  bbe49c2cf...[0m
+[0;32mI (306) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (310) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (314) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (318) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (321) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (328) heap_init: At 3FCA3990 len 00045D80 (279 KiB): RAM[0m
+[0;32mI (333) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (338) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (343) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (350) spi_flash: detected chip: generic[0m
+[0;32mI (352) spi_flash: flash io: dio[0m
+[0;33mW (355) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (368) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (374) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (381) main_task: Started on CPU0[0m
+[0;32mI (381) main_task: Calling app_main()[0m
+[0;32mI (391) DEVLOG_HW: DevLog Hardware V0[0m
+[0;32mI (391) DEVLOG_HW: OLED GPIO initialized[0m
+[0;32mI (391) DEVLOG_HW: SPI bus initialized[0m
+[0;32mI (401) DEVLOG_HW: OLED SPI device registered[0m
+[0;32mI (421) DEVLOG_HW: OLED hardware reset complete[0m
+[0;32mI (521) DEVLOG_HW: SH1106 initialized[0m
+[0;32mI (541) pp: pp rom version: e7ae62f[0m
+[0;32mI (541) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (551) wifi:wifi driver task: 3fced5c4, prio:23, stack:6656, core=0[0m
+[0;32mI (561) wifi:wifi firmware version: e12a754[0m
+[0;32mI (561) wifi:wifi certification version: v7.0[0m
+[0;32mI (561) wifi:config NVS flash: enabled[0m
+[0;32mI (561) wifi:config nano formatting: disabled[0m
+[0;32mI (561) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (571) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (571) wifi:Init management short buffer num: 32[0m
+[0;32mI (571) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (581) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (581) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (591) wifi:Init static rx buffer num: 10[0m
+[0;32mI (591) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (591) wifi_init: rx ba win: 6[0m
+[0;32mI (601) wifi_init: accept mbox: 6[0m
+[0;32mI (601) wifi_init: tcpip mbox: 32[0m
+[0;32mI (601) wifi_init: udp mbox: 6[0m
+[0;32mI (611) wifi_init: tcp mbox: 6[0m
+[0;32mI (611) wifi_init: tcp tx win: 5760[0m
+[0;32mI (611) wifi_init: tcp rx win: 5760[0m
+[0;32mI (611) wifi_init: tcp mss: 1440[0m
+[0;32mI (621) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (621) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (631) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (631) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (681) wifi:mode : sta (e8:3d:c1:f5:d2:e4)[0m
+[0;32mI (681) wifi:enable tsf[0m
+[0;32mI (691) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (701) BUTTON: Pressed[0m
+[0;32mI (711) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (721) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (741) wifi:<ba-add>idx:0 (ifx:0, 7c:c1:77:0d:80:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (781) wifi:connected with Livebox-80D0, aid = 8, channel 1, BW20, bssid = 7c:c1:77:0d:80:d0[0m
+[0;32mI (791) wifi:security: WPA2-PSK, phy: bgn, rssi: -51, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (791) wifi:pm start, type: 1[0m
+
+[0;32mI (791) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (801) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (821) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1201) BUTTON: Pressed[0m
+[0;32mI (1701) BUTTON: Pressed[0m
+[0;32mI (1861) esp_netif_handlers: sta ip: 192.168.1.32, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1861) WIFI: Got IP: 192.168.1.32[0m
+[0;32mI (2201) BUTTON: Pressed[0m
+[0;32mI (2701) BUTTON: Pressed[0m
+[0;32mI (3201) BUTTON: Pressed[0m
+[0;32mI (3701) BUTTON: Pressed[0m
+[0;32mI (4201) BUTTON: Pressed[0m
+[0;32mI (4701) BUTTON: Pressed[0m
+[0;32mI (5201) BUTTON: Pressed[0m
+[0;32mI (5701) BUTTON: Pressed[0m
+[0;32mI (6201) BUTTON: Pressed[0m
+[0;32mI (6701) BUTTON: Pressed[0m
+[0;32mI (7201) BUTTON: Pressed[0m
+[0;32mI (7701) BUTTON: Pressed[0m
+[0;32mI (8201) BUTTON: Pressed[0m
+[0;32mI (8701) BUTTON: Pressed[0m
+[0;32mI (9201) BUTTON: Pressed[0m
+[0;32mI (9701) BUTTON: Pressed[0m
+[0;32mI (10201) BUTTON: Pressed[0m
+[0;32mI (10701) BUTTON: Pressed[0m
+[0;32mI (11201) BUTTON: Pressed[0m
+[0;32mI (11701) BUTTON: Pressed[0m
+[0;32mI (12201) BUTTON: Pressed[0m
+[0;32mI (12701) BUTTON: Pressed[0m
+[0;32mI (13201) BUTTON: Pressed[0m
+[0;32mI (13701) BUTTON: Pressed[0m
+[0;32mI (14201) BUTTON: Pressed[0m
+[0;32mI (14701) BUTTON: Pressed[0m
+[0;32mI (15201) BUTTON: Pressed[0m
+[0;32mI (15701) BUTTON: Pressed[0m
+[0;32mI (16201) BUTTON: Pressed[0m
+[0;32mI (16701) BUTTON: Pressed[0m
+[0;32mI (17201) BUTTON: Pressed[0m
+[0;32mI (17701) BUTTON: Pressed[0m
+[0;32mI (18201) BUTTON: Pressed[0m
+[0;32mI (18701) BUTTON: Pressed[0m
+[0;32mI (19201) BUTTON: Pressed[0m
+[0;32mI (19701) BUTTON: Pressed[0m
+[0;32mI (20201) BUTTON: Pressed[0m
+[0;32mI (20701) BUTTON: Pressed[0m
+[0;32mI (21201) BUTTON: Pressed[0m
+[0;32mI (21701) BUTTON: Pressed[0m
+[0;32mI (22201) BUTTON: Pressed[0m
+[0;32mI (22701) BUTTON: Pressed[0m
+[0;32mI (23201) BUTTON: Pressed[0m
+[0;32mI (23701) BUTTON: Pressed[0m
+[0;32mI (24201) BUTTON: Pressed[0m
+[0;32mI (24701) BUTTON: Pressed[0m
+[0;32mI (25201) BUTTON: Pressed[0m
+[0;32mI (25701) BUTTON: Pressed[0m
+[0;32mI (26201) BUTTON: Pressed[0m
+[0;32mI (26701) BUTTON: Pressed[0m
+[0;32mI (27201) BUTTON: Pressed[0m
+[0;32mI (27701) BUTTON: Pressed[0m
+[0;32mI (28201) BUTTON: Pressed[0m
+[0;32mI (28701) BUTTON: Pressed[0m
+[0;32mI (29201) BUTTON: Pressed[0m
+[0;32mI (29701) BUTTON: Pressed[0m
+[0;32mI (30201) BUTTON: Pressed[0m
+[0;32mI (30701) BUTTON: Pressed[0m
+[0;32mI (31201) BUTTON: Pressed[0m
+[0;32mI (31701) BUTTON: Pressed[0m
+[0;32mI (32201) BUTTON: Pressed[0m
+[0;32mI (32701) BUTTON: Pressed[0m
+[0;32mI (33201) BUTTON: Pressed[0m
+[0;32mI (33701) BUTTON: Pressed[0m
+[0;32mI (34201) BUTTON: Pressed[0m
+[0;32mI (34701) BUTTON: Pressed[0m
+[0;32mI (35201) BUTTON: Pressed[0m
+[0;32mI (35701) BUTTON: Pressed[0m
+[0;32mI (36201) BUTTON: Pressed[0m
+[0;32mI (36701) BUTTON: Pressed[0m
+[0;32mI (37201) BUTTON: Pressed[0m
+[0;32mI (37701) BUTTON: Pressed[0m
+[0;32mI (38201) BUTTON: Pressed[0m
+[0;32mI (38701) BUTTON: Pressed[0m
+[0;32mI (39201) BUTTON: Pressed[0m
+[0;32mI (39701) BUTTON: Pressed[0m
+[0;32mI (40201) BUTTON: Pressed[0m
+[0;32mI (40701) BUTTON: Pressed[0m
+[0;32mI (41201) BUTTON: Pressed[0m
+[0;32mI (41701) BUTTON: Pressed[0m
+[0;32mI (42201) BUTTON: Pressed[0m
+[0;32mI (42701) BUTTON: Pressed[0m
+[0;32mI (43201) BUTTON: Pressed[0m
+[0;32mI (43701) BUTTON: Pressed[0m
+[0;32mI (44201) BUTTON: Pressed[0m
+[0;32mI (44701) BUTTON: Pressed[0m
+[0;32mI (45201) BUTTON: Pressed[0m
+[0;32mI (45701) BUTTON: Pressed[0m
+[0;32mI (46201) BUTTON: Pressed[0m
+[0;32mI (46701) BUTTON: Pressed[0m
+[0;32mI (47201) BUTTON: Pressed[0m
+[0;32mI (47701) BUTTON: Pressed[0m
+[0;32mI (48201) BUTTON: Pressed[0m
+[0;32mI (48701) BUTTON: Pressed[0m
+[0;32mI (49201) BUTTON: Pressed[0m
+[0;32mI (49701) BUTTON: Pressed[0m
+[0;32mI (50201) BUTTON: Pressed[0m
+[0;32mI (50701) BUTTON: Pressed[0m
+[0;32mI (51201) BUTTON: Pressed[0m
+[0;32mI (51701) BUTTON: Pressed[0m
+[0;32mI (52201) BUTTON: Pressed[0m
+[0;32mI (52701) BUTTON: Pressed[0m
+[0;32mI (53201) BUTTON: Pressed[0m
+[0;32mI (53701) BUTTON: Pressed[0m
+[0;32mI (54201) BUTTON: Pressed[0m
+[0;32mI (54701) BUTTON: Pressed[0m
+[0;32mI (55201) BUTTON: Pressed[0m
+[0;32mI (55701) BUTTON: Pressed[0m
+[0;32mI (56201) BUTTON: Pressed[0m
+[0;32mI (56701) BUTTON: Pressed[0m
+[0;32mI (57201) BUTTON: Pressed[0m
+[0;32mI (57701) BUTTON: Pressed[0m
+[0;32mI (58201) BUTTON: Pressed[0m
+[0;32mI (58701) BUTTON: Pressed[0m
+[0;32mI (59201) BUTTON: Pressed[0m
+[0;32mI (59701) BUTTON: Pressed[0m
+[0;32mI (60201) BUTTON: Pressed[0m
+[0;32mI (60701) BUTTON: Pressed[0m
+[0;32mI (61201) BUTTON: Pressed[0m
+[0;32mI (61701) BUTTON: Pressed[0m
+[0;32mI (62201) BUTTON: Pressed[0m
+[0;32mI (62701) BUTTON: Pressed[0m
+[0;32mI (63201) BUTTON: Pressed[0m
+[0;32mI (63701) BUTTON: Pressed[0m
+[0;32mI (64201) BUTTON: Pressed[0m
+[0;32mI (64701) BUTTON: Pressed[0m
+[0;32mI (65201) BUTTON: Pressed[0m
+[0;32mI (65701) BUTTON: Pressed[0m
+[0;32mI (66201) BUTTON: Pressed[0m
+[0;32mI (66701) BUTTON: Pressed[0m
+[0;32mI (67201) BUTTON: Pressed[0m
+[0;32mI (67701) BUTTON: Pressed[0m
+[0;32mI (68201) BUTTON: Pressed[0m
+[0;32mI (68701) BUTTON: Pressed[0m
+[0;32mI (69201) BUTTON: Pressed[0m
+[0;32mI (69701) BUTTON: Pressed[0m
+[0;32mI (70201) BUTTON: Pressed[0m
+[0;32mI (70701) BUTTON: Pressed[0m
+[0;32mI (71201) BUTTON: Pressed[0m
+[0;32mI (71701) BUTTON: Pressed[0m
+[0;32mI (72201) BUTTON: Pressed[0m
+[0;32mI (72701) BUTTON: Pressed[0m
+[0;32mI (73201) BUTTON: Pressed[0m
+[0;32mI (73701) BUTTON: Pressed[0m
+[0;32mI (74201) BUTTON: Pressed[0m
+[0;32mI (74701) BUTTON: Pressed[0m
+[0;32mI (75201) BUTTON: Pressed[0m
+[0;32mI (75701) BUTTON: Pressed[0m
+[0;32mI (76701) BUTTON: Pressed[0m
+[0;32mI (77701) BUTTON: Pressed[0m
+[0;32mI (78201) BUTTON: Pressed[0m
+[0;32mI (78701) BUTTON: Pressed[0m

@@ -1,7 +1,7 @@
 {
     "version":            "1.3",
     "project_name":       "agent-presence-device",
-    "project_version":    "1b8e20a-dirty",
+    "project_version":    "56d9904-dirty",
     "project_path":       "/home/ludo/dev/embedded/agent-presence-device",
     "idf_path":           "/home/ludo/.espressif/v6.1/esp-idf",
     "build_dir":          "/home/ludo/dev/embedded/agent-presence-device/build",
@@ -1885,7 +1885,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__cjson" ],
             "file": "/home/ludo/dev/embedded/agent-presence-device/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/ludo/dev/embedded/agent-presence-device/main/agent-presence-device.c", "/home/ludo/dev/embedded/agent-presence-device/main/font.c", "/home/ludo/dev/embedded/agent-presence-device/main/oled.c", "/home/ludo/dev/embedded/agent-presence-device/main/presence.c", "/home/ludo/dev/embedded/agent-presence-device/main/message_handler.c", "/home/ludo/dev/embedded/agent-presence-device/main/wifi_connection.c", "/home/ludo/dev/embedded/agent-presence-device/main/http_server.c" ],
+            "sources": [ "/home/ludo/dev/embedded/agent-presence-device/main/agent-presence-device.c", "/home/ludo/dev/embedded/agent-presence-device/main/font.c", "/home/ludo/dev/embedded/agent-presence-device/main/oled.c", "/home/ludo/dev/embedded/agent-presence-device/main/presence.c", "/home/ludo/dev/embedded/agent-presence-device/main/message_handler.c", "/home/ludo/dev/embedded/agent-presence-device/main/wifi_connection.c", "/home/ludo/dev/embedded/agent-presence-device/main/http_server.c", "/home/ludo/dev/embedded/agent-presence-device/main/button.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
