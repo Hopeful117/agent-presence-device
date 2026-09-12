@@ -56,4 +56,67 @@ entry 0x403c8904
 [0;32mI (354) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
 [0;32mI (359) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
 [0;32mI (366) main_task: Started on CPU0[0m
-[0;32mI (
+[0;32mI (366) main_task: Calling app_main()[0m
+[0;32mI (376) DEVLOG_HW: DevLog Hardware V0[0m
+[0;32mI (376) DEVLOG_HW: OLED GPIO initialized[0m
+[0;32mI (376) DEVLOG_HW: SPI bus initialized[0m
+[0;32mI (386) DEVLOG_HW: OLED SPI device registered[0m
+[0;32mI (406) DEVLOG_HW: OLED hardware reset complete[0m
+[0;32mI (506) DEVLOG_HW: SH1106 initialized[0m
+[0;32mI (526) pp: pp rom version: e7ae62f[0m
+[0;32mI (526) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (536) wifi:wifi driver task: 3fceebd4, prio:23, stack:6656, core=0[0m
+[0;32mI (546) wifi:wifi firmware version: e12a754[0m
+[0;32mI (546) wifi:wifi certification version: v7.0[0m
+[0;32mI (546) wifi:config NVS flash: enabled[0m
+[0;32mI (546) wifi:config nano formatting: disabled[0m
+[0;32mI (546) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (556) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (556) wifi:Init management short buffer num: 32[0m
+[0;32mI (556) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (566) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (566) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (576) wifi:Init static rx buffer num: 10[0m
+[0;32mI (576) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (576) wifi_init: rx ba win: 6[0m
+[0;32mI (586) wifi_init: accept mbox: 6[0m
+[0;32mI (586) wifi_init: tcpip mbox: 32[0m
+[0;32mI (586) wifi_init: udp mbox: 6[0m
+[0;32mI (596) wifi_init: tcp mbox: 6[0m
+[0;32mI (596) wifi_init: tcp tx win: 5760[0m
+[0;32mI (596) wifi_init: tcp rx win: 5760[0m
+[0;32mI (596) wifi_init: tcp mss: 1440[0m
+[0;32mI (606) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (606) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (616) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (616) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (666) wifi:mode : sta (e8:3d:c1:f5:d2:e4)[0m
+[0;32mI (666) wifi:enable tsf[0m
+[0;32mI (676) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (696) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (706) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (746) wifi:<ba-add>idx:0 (ifx:0, 7c:c1:77:0d:80:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (766) wifi:connected with Livebox-80D0, aid = 6, channel 1, BW20, bssid = 7c:c1:77:0d:80:d0[0m
+[0;32mI (766) wifi:security: WPA2-PSK, phy: bgn, rssi: -41, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (776) wifi:pm start, type: 1[0m
+
+[0;32mI (776) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (786) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (856) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (30706) main_task: Returned from app_main()[0m
+[0;32mI (420506) wifi:<ba-add>idx:1 (ifx:0, 7c:c1:77:0d:80:d0), tid:0, ssn:0, winSize:64[0m
+[0;32mI (422036) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)[0m
+[0;32mI (422036) wifi:<ba-del>idx:1, tid:0[0m
+[0;32mI (1290516) wifi:<ba-add>idx:1 (ifx:0, 7c:c1:77:0d:80:d0), tid:0, ssn:13, winSize:64[0m
+[0;32mI (1291776) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)[0m
+[0;32mI (1291776) wifi:<ba-del>idx:1, tid:0[0m
+[0;32mI (779) wifi:<ba-add>idx:0 (ifx:0, 7c:c1:77:0d:80:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (789) wifi:connected with Livebox-80D0, aid = 6, channel 1, BW20, bssid = 7c:c1:77:0d:80:d0[0m
+[0;32mI (799) wifi:security: WPA2-PSK, phy: bgn, rssi: -42, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (799) wifi:pm start, type: 1[0m
+
+[0;32mI (799) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (809) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (849) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (30719) main_task: Returned from app_main()[0m
+[0;32mI (278159) wifi:<ba-add>idx:1 (ifx:0, 7c:c1:77:0d:80:d0), tid:0, ssn:0, winSize:64[0m

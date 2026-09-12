@@ -6,5 +6,7 @@ idf_component_register(
         "presence.c"
         "message_handler.c"
         "wifi_connection.c"
+        "http_server.c"
     INCLUDE_DIRS "."
+       
 )

@@ -14,6 +14,7 @@
 
 #include "oled.h"
 #include "agent_message.h"
+#include "http_server.h"
 #include "message_handler.h"
 #include "wifi_connection.h"
 
@@ -26,24 +27,17 @@ void app_main(void)
 
    ESP_ERROR_CHECK(oled_init());
    ESP_ERROR_CHECK(wifi_connect());
+   ESP_ERROR_CHECK(http_server_start());
 
    /* Start with every pixel off. */
    oled_clear();
    ESP_ERROR_CHECK(oled_flush());
 
-    const AgentMessage message = {
-    .source = "DEVLOG",
-    .title = "BUILD OK",
-    .body = "STORY 0119",
-    .level = AGENT_INFO
-};
-    message_handler_handle(&message);
 
 
 
 
 
-   /* Keep the smoke test visible briefly, then power off the display. */
-   sleep(30);
-   oled_turn_off();
+
+
 }

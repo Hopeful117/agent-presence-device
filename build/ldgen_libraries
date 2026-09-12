@@ -206,4 +206,6 @@
 /home/ludo/dev/embedded/agent-presence-device/build/esp-idf/perfmon/libperfmon.a
 /home/ludo/dev/embedded/agent-presence-device/build/esp-idf/rt/librt.a
 /home/ludo/dev/embedded/agent-presence-device/build/esp-idf/spiffs/libspiffs.a
+/home/ludo/dev/embedded/agent-presence-device/build/esp-idf/espressif__cjson/libespressif__cjson.a
 /home/ludo/dev/embedded/agent-presence-device/build/esp-idf/main/libmain.a
+/home/ludo/dev/embedded/agent-presence-device/build/esp-idf/espressif__cjson/libespressif__cjson.a

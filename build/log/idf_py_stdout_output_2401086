@@ -1,0 +1,9 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- Building ESP-IDF components for target esp32s3
+-- Configuring incomplete, errors occurred!
+See also "/home/ludo/dev/embedded/agent-presence-device/build/CMakeFiles/CMakeOutput.log".
+See also "/home/ludo/dev/embedded/agent-presence-device/build/CMakeFiles/CMakeError.log".
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/ludo/dev/embedded/agent-presence-device -B/home/ludo/dev/embedded/agent-presence-device/build

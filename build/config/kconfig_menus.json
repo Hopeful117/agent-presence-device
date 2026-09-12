@@ -43139,6 +43139,34 @@
                 "type": "menu"
             },
             {
+                "children": [
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Limits how deeply nested arrays/objects can be before cJSON\nrejects to parse them. This is to prevent stack overflows.\nLower values use less stack, higher values allow deeper nesting.",
+                        "id": "CJSON_NESTING_LIMIT",
+                        "name": "CJSON_NESTING_LIMIT",
+                        "range": null,
+                        "title": "Maximum nesting depth for JSON parsing",
+                        "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Limits the depth for circular reference detection during\nprinting/comparison operations. This prevents infinite loops\nand stack overflows when processing JSON structures with\ncircular references. Lower values use less stack.",
+                        "id": "CJSON_CIRCULAR_LIMIT",
+                        "name": "CJSON_CIRCULAR_LIMIT",
+                        "range": null,
+                        "title": "Maximum depth for circular reference detection",
+                        "type": "int"
+                    }
+                ],
+                "depends_on": null,
+                "id": "component-config-cjson-home-ludo-dev-embedded-agent-presence-device-managed_components-espressif__cjson-Kconfig-1",
+                "title": "cJSON",
+                "type": "menu"
+            },
+            {
                 "children": [],
                 "depends_on": "\"${IDF_BUILD_V2}\"",
                 "id": "component-config-configuration-for-components-not-included-in-the-build-home-ludo-.espressif-v6.1-esp-idf-Kconfig-828",

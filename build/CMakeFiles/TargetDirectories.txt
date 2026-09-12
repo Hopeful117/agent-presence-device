@@ -1179,6 +1179,13 @@
 /home/ludo/dev/embedded/agent-presence-device/build/esp-idf/ulp/CMakeFiles/install.dir
 /home/ludo/dev/embedded/agent-presence-device/build/esp-idf/ulp/CMakeFiles/install/local.dir
 /home/ludo/dev/embedded/agent-presence-device/build/esp-idf/ulp/CMakeFiles/install/strip.dir
+/home/ludo/dev/embedded/agent-presence-device/build/esp-idf/espressif__cjson/CMakeFiles/__idf_espressif__cjson.dir
+/home/ludo/dev/embedded/agent-presence-device/build/esp-idf/espressif__cjson/CMakeFiles/edit_cache.dir
+/home/ludo/dev/embedded/agent-presence-device/build/esp-idf/espressif__cjson/CMakeFiles/rebuild_cache.dir
+/home/ludo/dev/embedded/agent-presence-device/build/esp-idf/espressif__cjson/CMakeFiles/list_install_components.dir
+/home/ludo/dev/embedded/agent-presence-device/build/esp-idf/espressif__cjson/CMakeFiles/install.dir
+/home/ludo/dev/embedded/agent-presence-device/build/esp-idf/espressif__cjson/CMakeFiles/install/local.dir
+/home/ludo/dev/embedded/agent-presence-device/build/esp-idf/espressif__cjson/CMakeFiles/install/strip.dir
 /home/ludo/dev/embedded/agent-presence-device/build/esp-idf/main/CMakeFiles/__idf_main.dir
 /home/ludo/dev/embedded/agent-presence-device/build/esp-idf/main/CMakeFiles/edit_cache.dir
 /home/ludo/dev/embedded/agent-presence-device/build/esp-idf/main/CMakeFiles/rebuild_cache.dir
