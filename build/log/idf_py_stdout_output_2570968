@@ -56,4 +56,398 @@ entry 0x403c8904
 [0;32mI (368) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
 [0;32mI (374) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
 [0;32mI (381) main_task: Started on CPU0[0m
-[0;32mI (
+[0;32mI (381) main_task: Calling app_main()[0m
+[0;32mI (391) DEVLOG_HW: DevLog Hardware V0[0m
+[0;32mI (391) DEVLOG_HW: OLED GPIO initialized[0m
+[0;32mI (391) DEVLOG_HW: SPI bus initialized[0m
+[0;32mI (401) DEVLOG_HW: OLED SPI device registered[0m
+[0;32mI (421) DEVLOG_HW: OLED hardware reset complete[0m
+[0;32mI (521) DEVLOG_HW: SH1106 initialized[0m
+[0;32mI (541) pp: pp rom version: e7ae62f[0m
+[0;32mI (541) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (551) wifi:wifi driver task: 3fced5c4, prio:23, stack:6656, core=0[0m
+[0;32mI (561) wifi:wifi firmware version: e12a754[0m
+[0;32mI (561) wifi:wifi certification version: v7.0[0m
+[0;32mI (561) wifi:config NVS flash: enabled[0m
+[0;32mI (561) wifi:config nano formatting: disabled[0m
+[0;32mI (561) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (571) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (571) wifi:Init management short buffer num: 32[0m
+[0;32mI (571) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (581) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (581) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (591) wifi:Init static rx buffer num: 10[0m
+[0;32mI (591) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (591) wifi_init: rx ba win: 6[0m
+[0;32mI (601) wifi_init: accept mbox: 6[0m
+[0;32mI (601) wifi_init: tcpip mbox: 32[0m
+[0;32mI (601) wifi_init: udp mbox: 6[0m
+[0;32mI (611) wifi_init: tcp mbox: 6[0m
+[0;32mI (611) wifi_init: tcp tx win: 5760[0m
+[0;32mI (611) wifi_init: tcp rx win: 5760[0m
+[0;32mI (611) wifi_init: tcp mss: 1440[0m
+[0;32mI (621) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (621) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (631) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (631) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (681) wifi:mode : sta (e8:3d:c1:f5:d2:e4)[0m
+[0;32mI (681) wifi:enable tsf[0m
+[0;32mI (691) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (721) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (731) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (751) wifi:<ba-add>idx:0 (ifx:0, 7c:c1:77:0d:80:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (771) wifi:connected with Livebox-80D0, aid = 8, channel 1, BW20, bssid = 7c:c1:77:0d:80:d0[0m
+[0;32mI (771) wifi:security: WPA2-PSK, phy: bgn, rssi: -50, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (781) wifi:pm start, type: 1[0m
+
+[0;32mI (781) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (781) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (841) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (2051) esp_netif_handlers: sta ip: 192.168.1.32, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2051) WIFI: Got IP: 192.168.1.32[0m
+[0;32mI (7811) wifi:<ba-add>idx:1 (ifx:0, 7c:c1:77:0d:80:d0), tid:0, ssn:0, winSize:64[0m
+[0;32mI (696) wifi:mode : sta (e8:3d:c1:f5:d2:e4)[0m
+[0;32mI (696) wifi:enable tsf[0m
+[0;32mI (706) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (716) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (736) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (756) wifi:<ba-add>idx:0 (ifx:0, 7c:c1:77:0d:80:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (816) wifi:connected with Livebox-80D0, aid = 8, channel 1, BW20, bssid = 7c:c1:77:0d:80:d0[0m
+[0;32mI (816) wifi:security: WPA2-PSK, phy: bgn, rssi: -47, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (826) wifi:pm start, type: 1[0m
+
+[0;32mI (826) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (836) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (856) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (2166) esp_netif_handlers: sta ip: 192.168.1.32, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2166) WIFI: Got IP: 192.168.1.32[0m
+[0;32mI (773) wifi:<ba-add>idx:0 (ifx:0, 7c:c1:77:0d:80:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (813) wifi:connected with Livebox-80D0, aid = 8, channel 1, BW20, bssid = 7c:c1:77:0d:80:d0[0m
+[0;32mI (813) wifi:security: WPA2-PSK, phy: bgn, rssi: -49, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (823) wifi:pm start, type: 1[0m
+
+[0;32mI (823) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (823) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (853) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1893) esp_netif_handlers: sta ip: 192.168.1.32, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1893) WIFI: Got IP: 192.168.1.32[0m
+[0;32mI (536) DEVLOG_HW: SH1106 initialized[0m
+[0;32mI (546) pp: pp rom version: e7ae62f[0m
+[0;32mI (556) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (566) wifi:wifi driver task: 3fced5c4, prio:23, stack:6656, core=0[0m
+[0;32mI (576) wifi:wifi firmware version: e12a754[0m
+[0;32mI (576) wifi:wifi certification version: v7.0[0m
+[0;32mI (576) wifi:config NVS flash: enabled[0m
+[0;32mI (576) wifi:config nano formatting: disabled[0m
+[0;32mI (576) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (586) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (586) wifi:Init management short buffer num: 32[0m
+[0;32mI (586) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (596) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (596) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (606) wifi:Init static rx buffer num: 10[0m
+[0;32mI (606) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (616) wifi_init: rx ba win: 6[0m
+[0;32mI (616) wifi_init: accept mbox: 6[0m
+[0;32mI (616) wifi_init: tcpip mbox: 32[0m
+[0;32mI (616) wifi_init: udp mbox: 6[0m
+[0;32mI (626) wifi_init: tcp mbox: 6[0m
+[0;32mI (626) wifi_init: tcp tx win: 5760[0m
+[0;32mI (626) wifi_init: tcp rx win: 5760[0m
+[0;32mI (636) wifi_init: tcp mss: 1440[0m
+[0;32mI (636) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (636) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (646) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (646) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (696) wifi:mode : sta (e8:3d:c1:f5:d2:e4)[0m
+[0;32mI (696) wifi:enable tsf[0m
+[0;32mI (706) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (726) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (726) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (776) wifi:<ba-add>idx:0 (ifx:0, 7c:c1:77:0d:80:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (796) wifi:connected with Livebox-80D0, aid = 8, channel 1, BW20, bssid = 7c:c1:77:0d:80:d0[0m
+[0;32mI (796) wifi:security: WPA2-PSK, phy: bgn, rssi: -45, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (806) wifi:pm start, type: 1[0m
+
+[0;32mI (806) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (816) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (826) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1916) esp_netif_handlers: sta ip: 192.168.1.32, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1916) WIFI: Got IP: 192.168.1.32[0m
+[0;32mI (406) DEVLOG_HW: OLED GPIO initialized[0m
+[0;32mI (406) DEVLOG_HW: SPI bus initialized[0m
+[0;32mI (406) DEVLOG_HW: OLED SPI device registered[0m
+[0;32mI (436) DEVLOG_HW: OLED hardware reset complete[0m
+[0;32mI (536) DEVLOG_HW: SH1106 initialized[0m
+[0;32mI (546) pp: pp rom version: e7ae62f[0m
+[0;32mI (556) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (566) wifi:wifi driver task: 3fced5c4, prio:23, stack:6656, core=0[0m
+[0;32mI (576) wifi:wifi firmware version: e12a754[0m
+[0;32mI (576) wifi:wifi certification version: v7.0[0m
+[0;32mI (576) wifi:config NVS flash: enabled[0m
+[0;32mI (576) wifi:config nano formatting: disabled[0m
+[0;32mI (576) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (586) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (586) wifi:Init management short buffer num: 32[0m
+[0;32mI (586) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (596) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (596) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (606) wifi:Init static rx buffer num: 10[0m
+[0;32mI (606) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (616) wifi_init: rx ba win: 6[0m
+[0;32mI (616) wifi_init: accept mbox: 6[0m
+[0;32mI (616) wifi_init: tcpip mbox: 32[0m
+[0;32mI (616) wifi_init: udp mbox: 6[0m
+[0;32mI (626) wifi_init: tcp mbox: 6[0m
+[0;32mI (626) wifi_init: tcp tx win: 5760[0m
+[0;32mI (626) wifi_init: tcp rx win: 5760[0m
+[0;32mI (636) wifi_init: tcp mss: 1440[0m
+[0;32mI (636) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (636) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (646) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (646) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (706) wifi:mode : sta (e8:3d:c1:f5:d2:e4)[0m
+[0;32mI (706) wifi:enable tsf[0m
+[0;32mI (716) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (726) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (746) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (956) wifi:<ba-add>idx:0 (ifx:0, 7c:c1:77:0d:80:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (976) wifi:connected with Livebox-80D0, aid = 8, channel 1, BW20, bssid = 7c:c1:77:0d:80:d0[0m
+[0;32mI (976) wifi:security: WPA2-PSK, phy: bgn, rssi: -47, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (986) wifi:pm start, type: 1[0m
+
+[0;32mI (986) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (996) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1056) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (2266) esp_netif_handlers: sta ip: 192.168.1.32, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2266) WIFI: Got IP: 192.168.1.32[0m
+[0;32mI (253176) wifi:<ba-add>idx:1 (ifx:0, 7c:c1:77:0d:80:d0), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1124806) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)[0m
+[0;32mI (1124806) wifi:<ba-del>idx:1, tid:0[0m
+[0;32mI (1993276) wifi:<ba-add>idx:1 (ifx:0, 7c:c1:77:0d:80:d0), tid:0, ssn:20, winSize:64[0m
+[0;32mI (536) DEVLOG_HW: SH1106 initialized[0m
+[0;32mI (546) pp: pp rom version: e7ae62f[0m
+[0;32mI (556) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (566) wifi:wifi driver task: 3fced5c4, prio:23, stack:6656, core=0[0m
+[0;32mI (576) wifi:wifi firmware version: e12a754[0m
+[0;32mI (576) wifi:wifi certification version: v7.0[0m
+[0;32mI (576) wifi:config NVS flash: enabled[0m
+[0;32mI (576) wifi:config nano formatting: disabled[0m
+[0;32mI (576) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (586) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (586) wifi:Init management short buffer num: 32[0m
+[0;32mI (586) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (596) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (596) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (606) wifi:Init static rx buffer num: 10[0m
+[0;32mI (606) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (616) wifi_init: rx ba win: 6[0m
+[0;32mI (616) wifi_init: accept mbox: 6[0m
+[0;32mI (616) wifi_init: tcpip mbox: 32[0m
+[0;32mI (616) wifi_init: udp mbox: 6[0m
+[0;32mI (626) wifi_init: tcp mbox: 6[0m
+[0;32mI (626) wifi_init: tcp tx win: 5760[0m
+[0;32mI (626) wifi_init: tcp rx win: 5760[0m
+[0;32mI (636) wifi_init: tcp mss: 1440[0m
+[0;32mI (636) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (636) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (646) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (646) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (696) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (706) wifi:mode : sta (e8:3d:c1:f5:d2:e4)[0m
+[0;32mI (706) wifi:enable tsf[0m
+[0;32mI (716) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (726) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (746) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (786) wifi:<ba-add>idx:0 (ifx:0, 7c:c1:77:0d:80:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (806) wifi:connected with Livebox-80D0, aid = 8, channel 1, BW20, bssid = 7c:c1:77:0d:80:d0[0m
+[0;32mI (806) wifi:security: WPA2-PSK, phy: bgn, rssi: -47, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (816) wifi:pm start, type: 1[0m
+
+[0;32mI (816) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (816) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (846) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1866) esp_netif_handlers: sta ip: 192.168.1.32, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1866) WIFI: Got IP: 192.168.1.32[0m
+[0;32mI (759346) wifi:<ba-add>idx:1 (ifx:0, 7c:c1:77:0d:80:d0), tid:0, ssn:0, winSize:64[0m
+[0;32mI (771) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (851) wifi:<ba-add>idx:0 (ifx:0, 7c:c1:77:0d:80:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (871) wifi:connected with Livebox-80D0, aid = 8, channel 1, BW20, bssid = 7c:c1:77:0d:80:d0[0m
+[0;32mI (881) wifi:security: WPA2-PSK, phy: bgn, rssi: -48, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (881) wifi:pm start, type: 1[0m
+
+[0;32mI (881) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (891) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (901) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1971) esp_netif_handlers: sta ip: 192.168.1.32, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1971) WIFI: Got IP: 192.168.1.32[0m
+[0;32mI (576) wifi:wifi firmware version: e12a754[0m
+[0;32mI (576) wifi:wifi certification version: v7.0[0m
+[0;32mI (576) wifi:config NVS flash: enabled[0m
+[0;32mI (576) wifi:config nano formatting: disabled[0m
+[0;32mI (576) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (586) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (586) wifi:Init management short buffer num: 32[0m
+[0;32mI (586) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (596) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (596) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (606) wifi:Init static rx buffer num: 10[0m
+[0;32mI (606) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (616) wifi_init: rx ba win: 6[0m
+[0;32mI (616) wifi_init: accept mbox: 6[0m
+[0;32mI (616) wifi_init: tcpip mbox: 32[0m
+[0;32mI (616) wifi_init: udp mbox: 6[0m
+[0;32mI (626) wifi_init: tcp mbox: 6[0m
+[0;32mI (626) wifi_init: tcp tx win: 5760[0m
+[0;32mI (626) wifi_init: tcp rx win: 5760[0m
+[0;32mI (636) wifi_init: tcp mss: 1440[0m
+[0;32mI (636) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (636) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (646) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (646) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (696) wifi:mode : sta (e8:3d:c1:f5:d2:e4)[0m
+[0;32mI (696) wifi:enable tsf[0m
+[0;32mI (716) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (746) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (756) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (786) wifi:<ba-add>idx:0 (ifx:0, 7c:c1:77:0d:80:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (826) wifi:connected with Livebox-80D0, aid = 8, channel 1, BW20, bssid = 7c:c1:77:0d:80:d0[0m
+[0;32mI (826) wifi:security: WPA2-PSK, phy: bgn, rssi: -44, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (836) wifi:pm start, type: 1[0m
+
+[0;32mI (836) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (846) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (856) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1946) esp_netif_handlers: sta ip: 192.168.1.32, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1946) WIFI: Got IP: 192.168.1.32[0m
+[0;32mI (47656) wifi:<ba-add>idx:1 (ifx:0, 7c:c1:77:0d:80:d0), tid:0, ssn:0, winSize:64[0m
+[0;33mW (718916) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (718916) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;33mW (933646) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (933646) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;33mW (1056226) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (1056226) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;33mW (2383456) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (2383456) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;33mW (2486666) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (2486666) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (566) wifi:wifi driver task: 3fced5c4, prio:23, stack:6656, core=0[0m
+[0;32mI (576) wifi:wifi firmware version: e12a754[0m
+[0;32mI (576) wifi:wifi certification version: v7.0[0m
+[0;32mI (576) wifi:config NVS flash: enabled[0m
+[0;32mI (576) wifi:config nano formatting: disabled[0m
+[0;32mI (576) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (586) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (586) wifi:Init management short buffer num: 32[0m
+[0;32mI (586) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (596) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (596) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (606) wifi:Init static rx buffer num: 10[0m
+[0;32mI (606) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (616) wifi_init: rx ba win: 6[0m
+[0;32mI (616) wifi_init: accept mbox: 6[0m
+[0;32mI (616) wifi_init: tcpip mbox: 32[0m
+[0;32mI (616) wifi_init: udp mbox: 6[0m
+[0;32mI (626) wifi_init: tcp mbox: 6[0m
+[0;32mI (626) wifi_init: tcp tx win: 5760[0m
+[0;32mI (626) wifi_init: tcp rx win: 5760[0m
+[0;32mI (636) wifi_init: tcp mss: 1440[0m
+[0;32mI (636) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (636) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (646) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (646) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (696) wifi:mode : sta (e8:3d:c1:f5:d2:e4)[0m
+[0;32mI (696) wifi:enable tsf[0m
+[0;32mI (706) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (726) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (766) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (806) wifi:<ba-add>idx:0 (ifx:0, 7c:c1:77:0d:80:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (816) wifi:connected with Livebox-80D0, aid = 8, channel 1, BW20, bssid = 7c:c1:77:0d:80:d0[0m
+[0;32mI (816) wifi:security: WPA2-PSK, phy: bgn, rssi: -45, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (826) wifi:pm start, type: 1[0m
+
+[0;32mI (826) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (836) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (886) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1896) esp_netif_handlers: sta ip: 192.168.1.32, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1896) WIFI: Got IP: 192.168.1.32[0m
+[0;32mI (99596) wifi:<ba-add>idx:1 (ifx:0, 7c:c1:77:0d:80:d0), tid:0, ssn:0, winSize:64[0m
+[0;32mI (281) cpu_start: GPIO 44 and 43 are used as console UART I/O pI (741) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (741) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (771) wifi:<ba-add>idx:0 (ifx:0, 7c:c1:77:0d:80:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (791) wifi:connected with Livebox-80D0, aid = 8, channel 1, BW20, bssid = 7c:c1:77:0d:80:d0[0m
+[0;32mI (791) wifi:security: WPA2-PSK, phy: bgn, rssi: -42, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (801) wifi:pm start, type: 1[0m
+
+[0;32mI (801) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (811) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (841) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1861) esp_netif_handlers: sta ip: 192.168.1.32, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1861) WIFI: Got IP: 192.168.1.32[0m
+[0;32mI (566) wifi:wifi driver task: 3fced5c4, prio:23, stack:6656, core=0[0m
+[0;32mI (576) wifi:wifi firmware version: e12a754[0m
+[0;32mI (576) wifi:wifi certification version: v7.0[0m
+[0;32mI (576) wifi:config NVS flash: enabled[0m
+[0;32mI (576) wifi:config nano formatting: disabled[0m
+[0;32mI (576) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (586) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (586) wifi:Init management short buffer num: 32[0m
+[0;32mI (586) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (596) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (596) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (606) wifi:Init static rx buffer num: 10[0m
+[0;32mI (606) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (616) wifi_init: rx ba win: 6[0m
+[0;32mI (616) wifi_init: accept mbox: 6[0m
+[0;32mI (616) wifi_init: tcpip mbox: 32[0m
+[0;32mI (616) wifi_init: udp mbox: 6[0m
+[0;32mI (626) wifi_init: tcp mbox: 6[0m
+[0;32mI (626) wifi_init: tcp tx win: 5760[0m
+[0;32mI (626) wifi_init: tcp rx win: 5760[0m
+[0;32mI (636) wifi_init: tcp mss: 1440[0m
+[0;32mI (636) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (636) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (646) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (646) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (696) wifi:mode : sta (e8:3d:c1:f5:d2:e4)[0m
+[0;32mI (696) wifi:enable tsf[0m
+[0;32mI (706) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (716) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (726) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (766) wifi:<ba-add>idx:0 (ifx:0, 7c:c1:77:0d:80:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (786) wifi:connected with Livebox-80D0, aid = 6, channel 1, BW20, bssid = 7c:c1:77:0d:80:d0[0m
+[0;32mI (786) wifi:security: WPA2-PSK, phy: bgn, rssi: -51, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (796) wifi:pm start, type: 1[0m
+
+[0;32mI (796) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (806) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (876) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1886) esp_netif_handlers: sta ip: 192.168.1.32, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1886) WIFI: Got IP: 192.168.1.32[0m
+[0;32mI (219096) wifi:<ba-add>idx:1 (ifx:0, 7c:c1:77:0d:80:d0), tid:0, ssn:0, winSize:64[0m
+[0;32mI (886) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1846) esp_netif_handlers: sta ip: 192.168.1.32, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1846) WIFI: Got IP: 192.168.1.32[0m
+[0;32mI (1458331) wifi:<ba-add>idx:1 (ifx:0, 7c:c1:77:0d:80:d0), tid:0, ssn:20, winSize:64[0m
+[0;33mW (1458341) httpd_uri: httpd_uri: URI '/health' not found[0m
+[0;33mW (1458341) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (1458421) httpd_uri: httpd_uri: URI '/' not found[0m
+[0;33mW (1458431) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (1529611) httpd_uri: httpd_uri: URI '/health' not found[0m
+[0;33mW (1529611) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (1529631) httpd_uri: httpd_uri: URI '/status' not found[0m
+[0;33mW (1529631) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (1529651) httpd_uri: httpd_uri: Method '1' not allowed for URI '/message'[0m
+[0;33mW (1529651) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (1529711) httpd_uri: httpd_uri: URI '/api' not found[0m
+[0;33mW (1529711) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (1529741) httpd_uri: httpd_uri: URI '/api/status' not found[0m
+[0;33mW (1529741) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (1529761) httpd_uri: httpd_uri: URI '/display' not found[0m
+[0;33mW (1529761) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (1529791) httpd_uri: httpd_uri: URI '/current' not found[0m
+[0;33mW (1529791) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (1538521) httpd_uri: httpd_uri: URI '/' not found[0m
+[0;33mW (1538521) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (1538541) httpd_uri: httpd_uri: Method '1' not allowed for URI '/message'[0m
+[0;33mW (1538541) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m

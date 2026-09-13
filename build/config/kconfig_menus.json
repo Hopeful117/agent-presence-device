@@ -6262,7 +6262,7 @@
             }
         ],
         "depends_on": null,
-        "id": "agent-presence-device-home-ludo-dev-embedded-agent-presence-device-main-Kconfig.projbuild-1",
+        "id": "agent-presence-device-main-Kconfig.projbuild-1",
         "title": "Agent Presence Device",
         "type": "menu"
     },
@@ -43162,7 +43162,7 @@
                     }
                 ],
                 "depends_on": null,
-                "id": "component-config-cjson-home-ludo-dev-embedded-agent-presence-device-managed_components-espressif__cjson-Kconfig-1",
+                "id": "component-config-cjson-managed_components-espressif__cjson-Kconfig-1",
                 "title": "cJSON",
                 "type": "menu"
             },

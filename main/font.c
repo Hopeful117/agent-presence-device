@@ -65,6 +65,10 @@ const uint8_t *font_get_glyph(char character)
       return FONT_UPPERCASE[character - 'A'];
    }
 
+   if (character >= 'a' && character <= 'z') {
+      return FONT_UPPERCASE[character - 'a'];
+   }
+
    if (character >= '0' && character <= '9') {
       return FONT_DIGITS[character - '0'];
    }
