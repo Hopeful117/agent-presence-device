@@ -11,10 +11,12 @@
 #include "esp_wifi.h"
 #include "esp_log.h"
 #include "sdkconfig.h"
+#include "mdns.h"
 
 
 
 static const char *TAG = "WIFI";
+static bool mdns_started;
 static void wifi_event_handler(void *arg,
     esp_event_base_t event_base,
     int32_t event_id,
@@ -84,5 +86,15 @@ static void wifi_event_handler(
         ip_event_got_ip_t *event = (ip_event_got_ip_t *) event_data;
 
         ESP_LOGI(TAG, "Got IP: " IPSTR, IP2STR(&event->ip_info.ip));
+
+        if (!mdns_started) {
+            ESP_ERROR_CHECK(mdns_init());
+            ESP_ERROR_CHECK(mdns_hostname_set("agent-presence"));
+            ESP_ERROR_CHECK(mdns_instance_name_set("Agent Presence Device"));
+            ESP_ERROR_CHECK(mdns_service_add(
+                "Agent Presence Device", "_http", "_tcp", 80, NULL, 0));
+            mdns_started = true;
+            ESP_LOGI(TAG, "mDNS advertised as agent-presence.local");
+        }
     }
 }
