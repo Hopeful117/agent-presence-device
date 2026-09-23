@@ -27,27 +27,38 @@ void app_main(void)
    ESP_LOGI(TAG, "DevLog Hardware V0");
 
    ESP_ERROR_CHECK(oled_init());
+   ESP_ERROR_CHECK(presence_init());
    ESP_ERROR_CHECK(button_init());
    ESP_ERROR_CHECK(wifi_connect());
    ESP_ERROR_CHECK(http_server_start());
 
    /* Start with every pixel off. */
-   oled_clear();
-   ESP_ERROR_CHECK(oled_flush());
+   presence_acknowledge();
 
     bool was_pressed = false;
+    TickType_t press_started = 0;
 
     while (true) {
+        presence_update();
         bool is_pressed = button_is_pressed();
-        if (is_pressed && !was_pressed) {
+        if (is_pressed != was_pressed) {
             vTaskDelay(pdMS_TO_TICKS(30));
 
-            if (button_is_pressed()) {
-                presence_acknowledge();
+            bool stable_pressed = button_is_pressed();
+            if (stable_pressed != was_pressed) {
+                if (stable_pressed) {
+                    press_started = xTaskGetTickCount();
+                } else {
+                    TickType_t duration = xTaskGetTickCount() - press_started;
+                    if (duration >= pdMS_TO_TICKS(PRESENCE_LONG_PRESS_THRESHOLD_MS)) {
+                        presence_acknowledge();
+                    } else {
+                        presence_next_page();
+                    }
+                }
+                was_pressed = stable_pressed;
             }
         }
-
-        was_pressed = is_pressed;
 
         vTaskDelay(pdMS_TO_TICKS(20));
     }
